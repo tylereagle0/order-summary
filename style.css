@@ -1,29 +1,151 @@
 body {
-    background-image: url("images/pattern-background-desktop.svg");
-    background-color: hsl(225, 100%, 94%);
-
-    height: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("images/pattern-background-desktop.svg"); /* tick */
+  background-color: hsl(225, 100%, 94%); /* tick */
+  background-size: 100%; /* tick */
+  background-position: top; /* tick */
+  background-repeat: no-repeat; /* tick */
+  height: 1440px;
 }
 
-.main-modal {
-    margin: auto;
-    width: 450px;
-    background-color: white;
-    font-family: 'Red Hat Display', sans-serif;
+div {
+  display: inline;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
 
-h1, p {
-    text-align: center;
-} 
+img {
+  padding-left: -60px;
+}
+
+.main-container {
+  background-image: url("images/illustration-hero.svg"); /* tick */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  margin: 2.9621% 42%; /* margin: top&bottom left&right */
+  width: 17.6%;
+  height: 48%;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  left: 50px;
+}
+
+.info {
+    width: 77%; /* relative to .main-container. 350px original*/
+    height: 55%;
+    margin: 2.9621% 14%; margin: /* top&bottom left&right */
+}
 
 h1 {
-
+  font-family: "Red Hat Display", sans-serif;
+  padding-top: 180px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 
 p {
-    font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500px;
+  padding: 0px 50px;
+  font-size: 16px;
+  margin: -30px 18px -10px 18px;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: hsl(225, 100%, 98%);
+  padding-top: 15px;
+  padding-bottom: -5px;
+
+  margin-top: -10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+
+  width: 350px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.image-container {
+  margin-top: -10px;
+  margin-left: -25px;
+  padding: 0px;
+}
+
+.plan-details {
+  display: inline-grid;
+  margin-left: -70px;
+  margin-top: -20px;
+}
+
+.annual-plan {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.price {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  align-self: flex-end;
+  font-size: 14px;
+  margin-top: 5px;
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  margin-bottom: 10px;
+  margin-right: -10px;
+  font-weight: 700;
+  font-family: "Red Hat Delivery", sans-serif;
+  font-size: 14px;
+  color: hsl(245, 75%, 52%);
+}
+
+a.change:hover {
+  color: hsl(245, 81%, 69%);
+}
+
+.payment-button {
+  display: inline-grid;
+  align-self: baseline;
+  width: 77%; /* relative to .main-container. 350px original*/
+  height: 6%;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+
+button {
+  width: 100%; /* relative to .main-container. 350px original*/
+  height: 100%;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  font-weight: 500;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px hsl(224, 23%, 55%);
+}
+
+a.cancelPayment {
+  margin-left: 180px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-family: "Red Hat Delivery", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: -60px;
+}
+
+a.cancelPayment:hover {
+  color: hsl(223, 47%, 23%);
 }
